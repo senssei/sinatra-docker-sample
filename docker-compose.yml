@@ -1,0 +1,7 @@
+web:
+  build: ./app
+  command: bundle exec rackup -o 0.0.0.0 -p 9292
+  volumes:
+    - ./app:/app
+  ports:
+    - "127.0.0.1:9292:9292"
